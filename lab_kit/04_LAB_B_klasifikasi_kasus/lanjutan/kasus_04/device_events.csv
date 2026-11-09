@@ -1,0 +1,3 @@
+waktu,akun,event,device_id,attestation,accessibility_aktif,overlay_terdeteksi,screen_share,work_profile,app_version
+2026-05-02T10:00:00+07:00,U-7721,binding,DEV-CC41,MEETS_DEVICE_INTEGRITY,tidak,tidak,tidak,tidak,6.1
+2026-09-09T19:30:00+07:00,U-7721,izin_berubah,DEV-CC41,MEETS_DEVICE_INTEGRITY,ya,tidak,tidak,tidak,6.1

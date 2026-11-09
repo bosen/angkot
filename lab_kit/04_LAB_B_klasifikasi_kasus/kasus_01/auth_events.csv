@@ -1,0 +1,6 @@
+waktu,akun,event,metode,hasil,ip,asn,asn_tipe,user_agent,session_id
+2026-07-07T23:14:00+07:00,U-5512,login,pin,sukses,114.10.22.9,AS7713,seluler,DanaApp/5.8 Android,s-1001
+2026-07-09T23:05:00+07:00,U-5512,login,pin,gagal,45.76.112.3,AS20473,hosting,Mozilla/5.0 Windows,s-1190
+2026-07-09T23:06:00+07:00,U-5512,login,pin,sukses,45.76.112.3,AS20473,hosting,Mozilla/5.0 Windows,s-1191
+2026-07-09T23:11:00+07:00,U-5512,device_binding_baru,—,sukses,45.76.112.3,AS20473,hosting,Mozilla/5.0 Windows,s-1191
+2026-07-09T23:26:00+07:00,U-5512,login,pin,gagal,114.10.22.9,AS7713,seluler,DanaApp/5.8 Android,s-1205

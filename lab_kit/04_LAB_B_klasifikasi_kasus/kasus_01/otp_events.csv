@@ -1,0 +1,3 @@
+waktu,akun,event,kanal,hasil,delta_request_verify_detik
+2026-07-09T23:09:00+07:00,U-5512,otp_request,sms,terkirim,—
+2026-07-09T23:10:00+07:00,U-5512,otp_verify,sms,sukses,41

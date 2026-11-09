@@ -1,0 +1,3 @@
+waktu,akun,event,metode,hasil,ip,asn,asn_tipe,user_agent,session_id
+2026-07-19T02:41:00+07:00,U-6630,login,biometrik,sukses,182.253.44.18,AS17974,seluler,DanaApp/5.9 Android,s-2201
+2026-07-22T02:39:00+07:00,U-6630,login,pin,sukses,182.253.44.18,AS17974,seluler,DanaApp/5.9 Android,s-2290

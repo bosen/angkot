@@ -1,0 +1,65 @@
+CATATAN PENANGANAN BUKTI — paket sampel B
+=========================================
+
+Dokumen ini adalah bagian dari bukti. Bacalah sebelum menyimpulkan apa pun
+dari hash atau dari metadata container.
+
+Nomor penanganan : PEN-2026-0914-03
+Disusun oleh     : tim penanganan bukti, 14 September 2026
+Berlaku untuk    : R3_sesi_C.mp4, R4_sesi_D.mp4
+
+
+1. ASAL BERKAS
+
+   Kedua berkas adalah hasil ekspor dari penyimpanan media sesi verifikasi,
+   bukan berkas yang diterima langsung dari perangkat pengirim.
+
+   R3_sesi_C.mp4  -> sesi SES-C-5120, akun A-31904, 3 September 2026
+   R4_sesi_D.mp4  -> sesi SES-D-5366, akun A-31904, 9 September 2026
+
+
+2. PERLAKUAN SAAT EKSPOR
+
+   Media sesi disimpan pada format internal dan tidak dapat dibaca langsung
+   oleh tools umum. Saat ekspor, kedua berkas dilewatkan proses transcode
+   ke MP4/H.264 agar dapat diperiksa.
+
+   Konsekuensi yang HARUS diperhitungkan saat membaca bukti ini:
+
+   a. Hash kriptografis berkas ekspor TIDAK akan sama dengan nilai
+      media_sha256_prefix yang dicatat server pada saat pengiriman.
+      Ketidakcocokan itu berasal dari ekspor, bukan dari pengirim.
+
+   b. R4_sesi_D.mp4 membawa tag format "encoder" bernilai Lavf. Tag itu
+      ditulis oleh tools ekspor kami. R3_sesi_C.mp4 diekspor dengan
+      opsi bitexact sehingga tagnya tidak tertulis. Selisih ini adalah
+      selisih prosedur internal, bukan temuan terhadap pengirim.
+
+   c. Nilai creation_time di dalam container dipertahankan apa adanya dari
+      media sumber dan TIDAK ditulis ulang saat ekspor. Kolom ini tetap
+      dapat dipakai sebagai bukti.
+
+   d. Jarak antar keyframe dan bitrate ditentukan oleh tools ekspor dan
+      TIDAK dapat dipakai sebagai indikator terhadap pengirim pada kedua
+      berkas ini.
+
+
+3. YANG TETAP DAPAT DIPAKAI SEBAGAI BUKTI
+
+   - media_sha256_prefix yang dicatat server pada saat pengiriman
+     (dua baris pada sesi_tantangan_B.csv), karena dihitung sebelum ekspor
+   - creation_time di dalam container
+   - tantangan_diterbitkan dibandingkan urutan_terdeteksi_pada_video
+   - latensi_respons_ms
+
+
+4. CATATAN UNTUK PENYUSUN LAPORAN
+
+   Setiap indikator yang berasal dari penanganan kami sendiri harus
+   disebut sebagai keterbatasan data pada laporan, bukan sebagai temuan.
+   Menyebut tag Lavf pada R4 sebagai jejak penyerang adalah kesalahan
+   atribusi, dan kesalahan itu dapat dibantah dengan dokumen ini.
+
+
+-- Seluruh berkas pada paket ini adalah pola uji sintetis yang dibuat untuk
+   pelatihan. Tidak ada data pengguna sungguhan di dalamnya.

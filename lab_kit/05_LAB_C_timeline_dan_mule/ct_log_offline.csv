@@ -1,0 +1,13 @@
+id,not_before,not_after,common_name,issuer,catatan
+8841201,2026-08-12,2026-11-10,dana-kaget.my.id,R3,domain berumur pendek pada TLD murah
+8841877,2026-08-12,2026-11-10,www.dana-kaget.my.id,R3,SAN dari entri yang sama
+8849003,2026-08-13,2026-11-11,dana-verifikasi.biz.id,R3,kata kunci verifikasi
+8852140,2026-08-13,2026-11-11,cek-saldo-dana.web.id,R3,—
+8861552,2026-08-15,2026-11-13,dana-premium-upgrade.online,R11,pretext upgrade merchant
+8867719,2026-08-15,2026-11-13,login.dana-premium-upgrade.online,R11,subdomain menyerupai alur login
+8873004,2026-08-16,2026-11-14,danaprotection-cek.site,R11,meniru nama fitur resmi
+8880231,2026-08-17,2026-11-15,akun-dana-dibekukan.my.id,R3,pretext akun diblokir
+8884460,2026-08-17,2026-11-15,dana.co.id,DigiCert,sah — pembanding
+8891077,2026-08-18,2026-11-16,api.dana.id,DigiCert,sah — pembanding
+8895512,2026-08-19,2026-11-17,undangan-digital-dana.my.id,R3,menggabungkan dua umpan
+8899840,2026-08-19,2026-11-17,m-dana-kaget.biz.id,R3,prefiks mobile

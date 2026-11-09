@@ -1,0 +1,12 @@
+# Berkas kerja Word dan LibreOffice
+~$*
+.~lock.*
+
+# Sistem berkas
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Hasil kerja peserta — jangan ikut ter-commit
+hasil_kerja/
+*.bak

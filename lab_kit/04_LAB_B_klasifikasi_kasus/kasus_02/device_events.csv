@@ -1,0 +1,4 @@
+waktu,akun,event,device_id,attestation,accessibility_aktif,overlay_terdeteksi,screen_share,work_profile,app_version
+2026-01-03T02:41:00+07:00,U-6630,binding,DEV-BBB2,MEETS_DEVICE_INTEGRITY,tidak,tidak,tidak,tidak,5.9
+2026-07-21T02:41:00+07:00,U-6630,izin_berubah,DEV-BBB2,MEETS_DEVICE_INTEGRITY,ya,ya,tidak,tidak,5.9
+2026-07-22T02:35:00+07:00,U-6630,sesi_aktif,DEV-BBB2,MEETS_DEVICE_INTEGRITY,ya,ya,tidak,ya,5.9
