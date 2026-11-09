@@ -1,4 +1,4 @@
-# Basic Fraud Investigation — bahan peserta
+# Basic Fraud Investigation 
 
 Bahan untuk peserta Risk Training & Workshop: deck pengajaran, seluruh bahan praktik, dan template laporan yang Anda pakai menulis hasil kerja dua hari.
 
