@@ -24,6 +24,23 @@ exiftool
 sha256sum    (coreutils; pada macOS: shasum -a 256)
 ```
 
+Tempat mengunduhnya:
+
+| Tools | Windows | macOS | Linux |
+|---|---|---|---|
+| ffprobe (ffmpeg) | [gyan.dev](https://www.gyan.dev/ffmpeg/builds/) atau [BtbN](https://github.com/BtbN/FFmpeg-Builds/releases) — ambil paket `essentials`, lalu tambahkan folder `bin/`-nya ke PATH | [evermeet.cx](https://evermeet.cx/ffmpeg/), atau `brew install ffmpeg` | `apt install ffmpeg`, `dnf install ffmpeg` ([RPM Fusion](https://rpmfusion.org/)) |
+| exiftool | [exiftool.org](https://exiftool.org/) — Windows Executable (64-bit) | [exiftool.org](https://exiftool.org/) — macOS Package (.pkg), atau `brew install exiftool` | `apt install libimage-exiftool-perl`, `dnf install perl-Image-ExifTool` |
+| sha256sum | sudah tersedia: `certutil -hashfile <berkas> SHA256` | sudah tersedia: `shasum -a 256 <berkas>` | sudah tersedia (coreutils) |
+
+Halaman unduhan resminya: [ffmpeg.org/download.html](https://ffmpeg.org/download.html) dan [exiftool.org](https://exiftool.org/). FFmpeg hanya menerbitkan kode sumber, jadi berkas siap pakai untuk Windows dan macOS diambil dari penyedia build yang ditautkan halaman resmi itu. Untuk sha256sum tidak ada yang perlu diunduh — padanannya sudah ada di ketiga sistem.
+
+Setelah terpasang, pastikan ketiganya jalan:
+
+```
+ffprobe -version
+exiftool -ver
+```
+
 Ketiganya gratis dan tidak memerlukan hak administrator pada sebagian besar sistem. Kalau pemasangannya diblokir kebijakan kantor, beri tahu instruktur sebelum hari pertama — ada jalan lain, tetapi perlu disiapkan.
 
 ## Cara memakai bahan lab
